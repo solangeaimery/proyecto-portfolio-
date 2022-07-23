@@ -18,7 +18,13 @@ body {
     font-family: 'Secular One', sans-serif;
     font-family: 'Signika', sans-serif;
 }
+body, html{
+    max-width: 100%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 
+}
 nav a {
     text-decoration: none;
     color: aliceblue;
@@ -74,11 +80,11 @@ nav .boton1:hover{
     display: flex;
     padding: 50px;
     margin-bottom: -200px;
+    box-sizing: border-box;
     
 }
 .hero img{
     width: 100%;
-    padding: 40px;
     margin-left: 50px;
     margin-top: 50px;
     height: 650px;
@@ -300,7 +306,7 @@ color: aliceblue;
 .cajaproyecto p{
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 30px;
+    padding-top: 50px;
     font-size: 20px;
     margin-top: -200px;
     margin-bottom: 50px;
@@ -478,46 +484,48 @@ font-size: 20px;
 
 @media(min-width:820px) and (max-width:1180px)
 {
-    html {
-        width: 100vw;
-    }
     nav{
         visibility: hidden;
     }
     #holasoyada{
         flex-direction: column;
         text-align: center;
-        height: 1200px;
+        height: 1000px;
         margin: 0%;
     }
     
     .hero img{
-        width: 600px;
-        padding-top: -20px;
-        margin-left: 100px;
-        margin-top: 50px;
+        width: 700px;
         height: 950px;
+        padding-left: 40px;
         }
-#conocimientos{
-    margin: 0%;
+    #conocimientos{
+        margin: 0%;
 }
-.cajasiconos{
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
+    .cajasiconos{
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
 
 }
 
-.caja1 ,.caja2{
-flex-direction: column;
+    .caja1 ,.caja2{
+    flex-direction: column;
 }
 
-.modulo1 ,.modulo2 , .modulo3{
-    padding-left: 50px;
+    .modulo1 ,.modulo2 , .modulo3{
+        padding: 50px;
 }
+
+    .containerproyectos{
+        justify-content: center;
+}
+
+
 #proyectos{
-    margin: 0%;
 }
+
+#proyectos 
 .cajaproyecto{
     width: 200px;
     height: 250px;
@@ -538,7 +546,6 @@ padding:10px;
 min-width: 0%;
 width: 100%;
 }
-
 .redesytexto{
     padding-left: 100px;
     padding-top: 100px;
@@ -575,9 +582,6 @@ textarea{
 }
 
 @media(min-width:0px) and (max-width: 819px){
-    * {
-        margin: 0;
-        padding: 0;}
 
     nav{
         visibility: hidden;
@@ -586,27 +590,60 @@ textarea{
         flex-direction: column;
         text-align: center;
         height: 1200px;
+        padding: 5px;
+    }
+
+    .partetextoada{
+        padding: 30px;
+    }
+    .partetextoada h1{
+        font-size: 50px;
+        margin: 10px;
+    }
+    
+    .partetextoada h3{
+        font-size: 25px;
+        margin-bottom: -20px;
+        margin: 10px;
+    
+    }
+    .hero{
+        display:flex;
+        justify-content: center;
+    }
+    .partetextoada p{
+        margin: 10px;
     }
     
     .hero img{
-        width: 500px;
-        height: 800px;
-        
+        width: 250px;
+        height: 550px;
+        padding: 20px;
         }
+    .textosconocimientos h1{
+        font-size: 40px;
+    }
     .cajasiconos{
         flex-direction: column;
+        padding: 40px;
     
         }
     .caja1 {
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 0px;
     }    
 
     .caja2{
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 0px;
     }
-
+    #proyectos h1{
+        padding:50px;
+        padding-bottom: 100px;
+}
+#proyectos span {
+    font-size: 20px;
+}
     .containerproyectos{
         flex-direction: column;
     }
@@ -621,43 +658,44 @@ textarea{
 
     .modulo1 , .modulo2 , .modulo3{
         flex-direction: column;
+        padding-left:40px ;
     }
-.modulo3{
-    padding-left: 200px;
-}
-#contactame{
-    padding: 0%;
-}
-.cajacontactame{
-    flex-direction: column;
-    padding:0%;
-    min-width: 100px;
-    width: 400px;
-    min-width: none
-;
+
+    #contactame{
+        padding: 0%;
     }
-    
-    .redesytexto{
-        padding-left: 100px;
-        padding-top:50px;
-        min-width: none;
-    
+    .cajacontactame{
+        flex-direction: column;
+        padding:0%;
+        min-width: 100px;
     }
-    
+        
     .redesytexto h1{
-        text-align: center;
+        margin-left: 20px;
     }
-    
+    .redesytexto{
+        width: 50%;
+        margin-right: 50px;
+        margin-left: -19px;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top:50px;
+}
+    .redesytexto p{
+        width: 300px;
+        padding-left: 20px;
+
+}  
     .formulario{
-        padding-left: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 50px;
-        min-width: none
-        ;
+        box-sizing: border-box;
         
     }
     
     .email{
-        width: 410px;
+        width: 300px;
     }
     
     .formulario h1{
@@ -665,11 +703,11 @@ textarea{
     }
     
     textarea{
-        width: 460px;
+        width: 300px;
     }
     
     .enviar{
-        margin-left: 150px;
+        margin-left: 80px;
     }
 
 }
