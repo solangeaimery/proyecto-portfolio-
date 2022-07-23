@@ -1,13 +1,13 @@
 nav{
 display: flex;
 justify-content: space-between;
-position: sticky;
+position: sticky !important;
 top: 0%;
 height: 70px;
 background-color: #A60070;
-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75);
--webkit-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75);
--moz-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75);
+box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
+-webkit-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
+-moz-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
 }
 
 body {
@@ -22,7 +22,6 @@ body, html{
     max-width: 100%;
     margin: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
 
 }
 nav a {
@@ -369,10 +368,14 @@ min-width: 850px;
 .nombreyapellido{
     display: flex;
 }
-.ordendeiconos{
+
+.ordendeiconos a{
+    width: 300px;
     display: flex;
-    align-items: center;
     cursor: pointer;
+    text-decoration: none ;
+    font-style: normal;
+    color: black;
 }
 
 
@@ -399,7 +402,7 @@ border-radius: 50%;
 margin-left: 10px;
 }
 
-.ordendeiconos:hover{
+.ordendeiconos a:hover{
     color: #A60070 ;
 }
 
@@ -454,7 +457,7 @@ padding-top: 100px;
     text-decoration: none;
     color: white;
     font-size: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 
 #piedepag i{
@@ -467,9 +470,9 @@ font-size: 20px;
     height: 35px;
     padding: 0px;
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
     text-align: center;
     padding-top: 10px;
 }
@@ -484,6 +487,10 @@ font-size: 20px;
 
 @media(min-width:820px) and (max-width:1180px)
 {
+    body, html{
+        overflow-x: hidden;
+    
+    }
     nav{
         visibility: hidden;
     }
@@ -582,6 +589,9 @@ textarea{
 }
 
 @media(min-width:0px) and (max-width: 819px){
+    body, html{
+        overflow-x: hidden;
+    }
 
     nav{
         visibility: hidden;
