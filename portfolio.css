@@ -205,6 +205,7 @@ min-width: 250px;
     transform: scale(103%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
     color: #8D006E;
+    transition-duration: 0.5s;
     
 }
 
@@ -225,6 +226,7 @@ min-width: 250px;
     transform: scale(103%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
     color: white;
+    transition-duration: 0.5s;
 }
 
 html {
@@ -337,6 +339,7 @@ color: aliceblue;
     transform: scale(103%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
     color: white;
+    transition-duration: 0.5s;
 }
 #contactame{
     background-color: white;
