@@ -462,9 +462,13 @@ padding-top: 100px;
 
 #piedepag a{
     text-decoration: none;
-    color: white;
+    color: aliceblue;
     font-size: 20px;
     margin: 5px;
+}
+
+#piedepag a:hover {
+    color:#F1C8D8;
 }
 
 #piedepag i{
