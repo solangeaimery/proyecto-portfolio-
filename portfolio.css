@@ -70,7 +70,7 @@ nav .boton1 {
 
 nav .boton1:hover{
     background-color: black;
-    color: #daabca;
+    color:#F1C8D8;;
 }
 
 
@@ -100,7 +100,7 @@ nav .boton1:hover{
     
     font-family: 'Archivo Black', sans-serif;
     font-size: 70px;
-    color: #daabca;
+    color: #F1C8D8;
     margin: 20px;
 
 }
@@ -140,14 +140,11 @@ font-weight: bold;
 }
 
 .partetextoada button:hover{
-    color: black;
-    filter: opacity(5);
-    
+    color: black; 
 }
 
 #conocimientos {
 background-color: #CBCBCB;
-
 }
 
 .textosconocimientos {
@@ -206,14 +203,16 @@ min-width: 250px;
 
 .modelodecaja:hover{
     transform: scale(103%);
-    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
+    color: #8D006E;
+    
 }
 
 .modelodecaja1{
     width: 25%;
     height: 250px;
     text-align: center;
-    background-color: #CDAAC8 ;
+    background-color: #F1C8D8;
     margin: 20px;
     border: slategray;
     display: flex;
@@ -225,6 +224,7 @@ min-width: 250px;
 .modelodecaja1:hover{
     transform: scale(103%);
     box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
+    color: white;
 }
 
 html {
@@ -317,7 +317,7 @@ color: aliceblue;
 }
 
 .cajaproyecto{
-    background-color:#CDAAC8;
+    background-color:#F1C8D8;
     width: 250px;
     height: 300px;
     margin: 20px;
@@ -334,8 +334,9 @@ color: aliceblue;
 }
 
 .cajaproyecto:hover{
-border: #A60070 solid ;
-border-width: 4px;
+    transform: scale(103%);
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
+    color: white;
 }
 #contactame{
     background-color: white;
@@ -344,8 +345,10 @@ border-width: 4px;
 .cajacontactame{
     padding: 100px;
 display: flex;
-background-color: #CACACA;
+background-color: #F1C8D8;
 min-width: 850px;
+border: #CACACA solid;
+border-width: 20px;
 }
 .redesytexto{
     width: 50%;
