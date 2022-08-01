@@ -1,13 +1,14 @@
 nav{
 display: flex;
 justify-content: space-between;
-position: sticky !important;
+position: sticky;
 top: 0%;
 height: 70px;
 background-color: #A60070;
-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
--webkit-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
--moz-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) !important;
+box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75);
+-webkit-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75) ;
+-moz-box-shadow: 0px 7px 27px -6px rgba(135,122,122,0.75);
+z-index:9999
 }
 
 body {
@@ -204,10 +205,8 @@ min-width: 250px;
 }
 
 .modelodecaja:hover{
-    box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
--webkit-box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
--moz-box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
-
+    transform: scale(103%);
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px
 }
 
 .modelodecaja1{
@@ -224,10 +223,8 @@ min-width: 250px;
 }
 
 .modelodecaja1:hover{
-    box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
-    -webkit-box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
-    -moz-box-shadow: 0px -1px 24px 7px rgba(79,79,79,0.24);
-
+    transform: scale(103%);
+    box-shadow: rgba(25, 60, 77, 0.4) 0px 25px 20px -20px;
 }
 
 html {
@@ -241,28 +238,35 @@ color: black;
 }
 
 .frase{
-    text-align: center;
-    background-color: #A60070 ;
+    text-align:end;
+    background-image: url(imagenes/simone-de-beauvoir-2.jpeg);
     color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 .frase i {
 font-size: 100px;
 padding: 30px;
 padding-top: 80px;
+margin-right: 50px;
 color: aliceblue;
 }
 
 .frase p{
     font-size: 25px;
     padding: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 700px;
+    padding-right: 0px;
+    width: 500px;
+    font-weight: bold;
 }
 
 .frase h3{
     font-size: 30px;
     padding: 30px;
     padding-bottom: 100px;
+    margin-right: 50px;
 }
 
 #proyectos{
@@ -516,6 +520,9 @@ font-size: 20px;
 
 }
 
+    .frase p{
+        padding-left: 250px;
+}
     .caja1 ,.caja2{
     flex-direction: column;
 }
@@ -526,10 +533,6 @@ font-size: 20px;
 
     .containerproyectos{
         justify-content: center;
-}
-
-
-#proyectos{
 }
 
 #proyectos 
@@ -638,6 +641,24 @@ textarea{
         padding: 40px;
     
         }
+
+    .frase p{
+        font-size: 20px;
+        width: 300px;
+        padding: 40px;
+        }
+    
+    .frase h3{
+        font-size: 30px;
+        padding: 20px;
+        padding-bottom: 100px;
+        margin-right: 0px;
+        }
+
+    .frase{
+        text-align: center;
+    }
+
     .caja1 {
         flex-direction: column;
         margin-left: 0px;
